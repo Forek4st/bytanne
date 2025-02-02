@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Jost", serif;
+  font-family: "Lato", serif;
 }
 
 html,
@@ -93,7 +92,7 @@ body div#root main h1 {
   font-size: 40px;
   font-weight: 400;
 
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn =2.5s ease-in-out;
 }
 
 body div#root main p {
@@ -102,5 +101,5 @@ body div#root main p {
   font-size: 11px;
   font-weight: 400;
 
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 2.5s ease-in-out;
 }
