@@ -92,7 +92,7 @@ body div#root main h1 {
   font-size: 40px;
   font-weight: 400;
 
-  animation: fadeIn =2.5s ease-in-out;
+  animation: fadeIn 2.5s ease-in-out;
 }
 
 body div#root main p {
