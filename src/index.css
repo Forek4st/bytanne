@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body div#root {
+  height: 100%;
+}
+
+body div#root header {
+  height: 89.2px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  background-color: white;
+  color: #1c1c1c;
+
+  text-transform: uppercase;
+  padding: 34px;
+}
+
+body div#root header div {
+  height: 89.2px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  margin-left: 100px;
+}
+
+body div#root header div h1 {
+  color: #1c1c1c;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body div#root header ul {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 600px;
+  list-style: none;
+  width: 50%;
+  color: #1c1c1c;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+body div#root header ul li {
+  cursor: pointer;
+}
+
+body div#root header ul li:hover {
+  color: #d3ccc4;
+}
+
+body div#root main {
+  background-color: #d3ccc4;
+  height: calc(100% - 89.2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body div#root main h1 {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 400;
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+body div#root main p {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 400;
+
+  animation: fadeIn 1s ease-in-out;
+}
