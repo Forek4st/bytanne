@@ -14,7 +14,9 @@ const Navbar = ({ logo, inicio, proyectos, contacto }) => {
         <li>
           <Link to="/proyectos">{proyectos}</Link>
         </li>
-        <li>{contacto}</li>
+        <li>
+          <Link to="/contacto">{contacto}</Link>
+        </li>
       </ul>
     </header>
   );

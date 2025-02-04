@@ -154,3 +154,25 @@ body div#root section div img {
   margin-bottom: 30px;
   height: 80%;
 }
+
+body div#root section.contact {
+  display: flex;
+  height: 100%;
+}
+
+body div#root section.contact div.contact-info {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  cursor: auto;
+  p {
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: whitesmoke;
+  }
+}

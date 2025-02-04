@@ -10,7 +10,7 @@ const Proyectos = () => {
         <img src={cocinas} alt="" />
       </div>
       <div>
-        <h2>Montajes</h2>
+        <h2>Diseño</h2>
         <img src={colab} alt="" />
       </div>
       <div>
