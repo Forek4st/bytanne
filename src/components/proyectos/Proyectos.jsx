@@ -6,12 +6,15 @@ const Proyectos = () => {
   return (
     <section>
       <div>
+        <h2>Cocinas</h2>
         <img src={cocinas} alt="" />
       </div>
       <div>
+        <h2>Montajes</h2>
         <img src={colab} alt="" />
       </div>
       <div>
+        <h2>Colab</h2>
         <img src={diseno} alt="" />{" "}
       </div>
     </section>

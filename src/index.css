@@ -22,7 +22,7 @@ body div#root header {
   align-items: center;
   justify-content: start;
   width: 100%;
-  background-color: #E7E6E6;
+  background-color: #e7e6e6;
   color: #1c1c1c;
 
   text-transform: uppercase;
@@ -34,7 +34,7 @@ body div#root header div {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #E7E6E6;
+  background-color: #e7e6e6;
   margin-left: 100px;
 }
 
@@ -114,34 +114,43 @@ body div#root main p {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-
 body div#root section {
   background-color: #d3ccc4;
-  height: 100vh;
+  height: calc(100% - 89.2px);
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-padding: 30px;
-grid-gap: 20px;
-
-
-}
-
-body div#root section div{
-  background-color: #E7E6E6;
-  height: 500px;
-  width: 350px;
-  display: flex;
+  padding: 50px;
+  grid-gap: 50px;
   justify-content: center;
   align-items: end;
-  animation: fadeIn 1.5s ease-in-out;
-  margin: 40px;
-  
-
 }
 
-body div#root section div img{
-height: 300px;
+body div#root section div {
+  background-color: #e7e6e6;
+  height: calc(100% - 89.2px);
+  width: 100%;
+  height: 510px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
 
-margin: 100px 20px 30px 20px;
+body div#root section div h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  align-self: flex-end;
+
+  margin: 2rem;
+
+  font-weight: 300;
+}
+
+body div#root section div img {
+  margin-bottom: 30px;
+  height: 80%;
 }
