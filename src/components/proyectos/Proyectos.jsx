@@ -4,20 +4,28 @@ import diseno from "../../assets/proyectos/diseno.png";
 
 const Proyectos = () => {
   return (
-    <section>
-      <div>
-        <h2>Cocinas</h2>
-        <img src={cocinas} alt="" />
-      </div>
-      <div>
-        <h2>Diseño</h2>
-        <img src={colab} alt="" />
-      </div>
-      <div>
-        <h2>Colab</h2>
-        <img src={diseno} alt="" />{" "}
-      </div>
-    </section>
+    <main className="proyectos">
+      <section>
+        <div>
+          <div className="titles">
+            <h2>Cocinas</h2>
+          </div>
+          <img src={cocinas} alt="" />
+        </div>
+        <div>
+          <div className="titles">
+            <h2>Diseño</h2>
+          </div>
+          <img src={colab} alt="" />
+        </div>
+        <div>
+          <div className="titles">
+            <h2>Colab</h2>
+          </div>
+          <img src={diseno} alt="" />{" "}
+        </div>
+      </section>
+    </main>
   );
 };
 

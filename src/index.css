@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Lato", serif;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 html,
 body {
@@ -16,7 +24,7 @@ body div#root {
   height: 100%;
 }
 
-body div#root header {
+body div#root header nav {
   height: 89.2px;
   display: flex;
   align-items: center;
@@ -29,7 +37,7 @@ body div#root header {
   padding: 34px;
 }
 
-body div#root header div {
+body div#root header nav div {
   height: 89.2px;
   display: flex;
   align-items: center;
@@ -38,7 +46,7 @@ body div#root header div {
   margin-left: 100px;
 }
 
-body div#root header div h1 {
+body div#root header nav div h1 {
   color: #1c1c1c;
   font-weight: 400;
   font-size: 11px;
@@ -46,7 +54,7 @@ body div#root header div h1 {
   letter-spacing: 2px;
 }
 
-body div#root header ul {
+body div#root header nav ul {
   display: flex;
   align-items: end;
   justify-content: center;
@@ -60,24 +68,24 @@ body div#root header ul {
   font-weight: 400;
 }
 
-body div#root header ul li {
+body div#root header nav ul li {
   cursor: pointer;
 }
 
-body div#root header ul li a {
+body div#root header nav ul li a {
   text-decoration: none;
   color: #1c1c1c;
 }
-body div#root header ul li a:hover {
+body div#root header nav ul li a:hover {
   text-decoration: none;
   color: #d3ccc4;
 }
 
-body div#root header ul li:hover {
+body div#root header nav ul li:hover {
   color: #d3ccc4;
 }
 
-body div#root main {
+body div#root main.landing {
   background-color: #d3ccc4;
   height: calc(100% - 89.2px);
   display: flex;
@@ -85,17 +93,11 @@ body div#root main {
   justify-content: center;
   align-items: center;
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+body div#root main.landing {
+  text-align: center;
 }
 
-body div#root main h1 {
+body div#root main.landing h1 {
   color: whitesmoke;
   letter-spacing: 2px;
   font-size: 40px;
@@ -104,7 +106,7 @@ body div#root main h1 {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-body div#root main p {
+body div#root main.landing p {
   color: whitesmoke;
   letter-spacing: 2px;
   font-size: 11px;
@@ -114,60 +116,75 @@ body div#root main p {
   animation: fadeIn 2.5s ease-in-out;
 }
 
-body div#root section {
+body div#root main.proyectos {
   background-color: #d3ccc4;
   height: calc(100% - 89.2px);
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 50px;
-  grid-gap: 50px;
+  display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 
-body div#root section div {
-  background-color: #e7e6e6;
-  height: calc(100% - 89.2px);
-  width: 100%;
-  height: 510px;
-  cursor: pointer;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+body div#root main.proyectos section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   align-items: center;
+  width: 90%;
+  height: 80%;
+  background-color: #e7e6e6;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-body div#root section div h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  align-self: flex-end;
+body div#root main.proyectos section div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  margin: 2rem;
+body div#root main.proyectos section div.titles {
+  letter-spacing: 2px;
+  display: flex;
+  width: 80%;
+  align-items: end;
+}
 
+body div#root main.proyectos section div.titles h2 {
   font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
-body div#root section div img {
+body div#root main.proyectos section div img {
   margin-bottom: 30px;
+  width: 80%;
   height: 80%;
+  cursor: pointer;
 }
 
-body div#root section.contact {
-  display: flex;
+body div#root main.contact {
   height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #d3ccc4;
 }
 
-body div#root section.contact div.contact-info {
+body div#root main.contact div.contact-info {
   display: flex;
+  flex-direction: column;
   background-color: transparent;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   height: 100%;
   cursor: auto;
+
   p {
     margin: 10px;
     text-transform: uppercase;
@@ -175,4 +192,11 @@ body div#root section.contact div.contact-info {
     font-weight: 400;
     color: whitesmoke;
   }
+}
+
+body div#root main.contact div img {
+  display: flex;
+
+  height: 500px;
+  margin: 0 auto;
 }

@@ -1,11 +1,10 @@
+import profilePic from "../../assets/profilePic.png";
+
 const Contacto = () => {
   return (
-    <section
-      className="contact
-    "
-    >
+    <main className="contact">
       <div>
-        <img src="" alt="" />
+        <img src={profilePic} alt="" />
       </div>
       <div className="contact-info">
         <p>Tane Dieguez Alvarez</p>
@@ -14,7 +13,7 @@ const Contacto = () => {
         <p>by.tannedieguez@gmail.com</p>
         <p>Diseñadora de Interiores</p>
       </div>
-    </section>
+    </main>
   );
 };
 
